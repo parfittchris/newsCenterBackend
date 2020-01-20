@@ -110,6 +110,6 @@ def get_article(id):
 
 # Run Server
 if __name__ == '__main__':
-    app.run(threaded=True, port)
+    app.run(threaded=True)
     # app.run(debug=True);
 
