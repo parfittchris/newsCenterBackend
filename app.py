@@ -7,8 +7,7 @@ import os
 
 # Init App
 
-app = Flask(__name__, static_folder="./frontend",
-            template_folder="./static/src")
+app = Flask(__name__)
 
 CORS(app)
 basedir = os.path.abspath(os.path.dirname(__file__))
