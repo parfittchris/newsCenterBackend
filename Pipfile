@@ -14,6 +14,7 @@ selenium = "*"
 flask-script = "*"
 flask-migrate = "*"
 flask-cors = "*"
+apscheduler = "*"
 
 [requires]
 python_version = "3.8"
