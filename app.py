@@ -3,6 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from webscraper import get_cnn, get_fox, get_NYT, get_huff, get_nbc
 from flask_cors import CORS
+
+import time
 import os
 
 # Init App
@@ -93,23 +95,25 @@ def get_article(id):
     return jsonify(result)
 
 
-# cnn_results = get_cnn()
-# fox_results = get_fox()
-# fox_results = get_NYT()
-# huff_results = get_huff()
-# nbc_results = get_nbc()
+while True:
+    cnn_results = get_cnn()
+    fox_results = get_fox()
+    fox_results = get_NYT()
+    huff_results = get_huff()
+    nbc_results = get_nbc()
 
+    add_article(cnn_results, 'CNN')
+    add_article(fox_results, 'FOX')
+    add_article(fox_results, 'NYTimes')
+    add_article(huff_results, 'Huffington Post')
+    add_article(nbc_results, 'NBC News')
 
-# add_article(cnn_results, 'CNN')
-# add_article(fox_results, 'FOX')
-# add_article(fox_results, 'NYTimes')
-# add_article(huff_results, 'Huffington Post')
-# add_article(nbc_results, 'NBC News')
+    time.sleep(10800)
 
 
 # Run Server
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
-    # app.run(debug=True);
+    # port = int(os.environ.get('PORT', 5000))
+    # app.run(host='0.0.0.0', port=port)
+    app.run(debug=True);
 
