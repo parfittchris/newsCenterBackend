@@ -98,14 +98,15 @@ def get_article(id):
 while True:
     cnn_results = get_cnn()
     fox_results = get_fox()
-    fox_results = get_NYT()
-    huff_results = get_huff()
+    nyt_results = get_NYT()
+    # huff_results = get_huff()
     nbc_results = get_nbc()
+
 
     add_article(cnn_results, 'CNN')
     add_article(fox_results, 'FOX')
-    add_article(fox_results, 'NYTimes')
-    add_article(huff_results, 'Huffington Post')
+    add_article(nyt_results, 'NYTimes')
+    # add_article(huff_results, 'Huffington Post')
     add_article(nbc_results, 'NBC News')
 
     time.sleep(10800)
@@ -113,7 +114,7 @@ while True:
 
 # Run Server
 if __name__ == '__main__':
-    # port = int(os.environ.get('PORT', 5000))
-    # app.run(host='0.0.0.0', port=port)
-    app.run(debug=True);
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+    # app.run(debug=True);
 

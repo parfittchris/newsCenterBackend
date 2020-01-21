@@ -115,7 +115,7 @@ def get_huff():
     for headline in headlines:
         url = headline.find_elements_by_tag_name("a")
         title = headline.text
-
+        
         if len(title) > 0 and len(url) > 0:
             obj = {
                     'site': 'Huffington Post',
