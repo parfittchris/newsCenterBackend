@@ -95,21 +95,21 @@ def get_article(id):
     return jsonify(result)
 
 
-while True:
-    cnn_results = get_cnn()
-    fox_results = get_fox()
-    nyt_results = get_NYT()
+# while True:
+#     cnn_results = get_cnn()
+#     fox_results = get_fox()
+#     nyt_results = get_NYT()
     # huff_results = get_huff()
-    nbc_results = get_nbc()
+    # nbc_results = get_nbc()
 
 
-    add_article(cnn_results, 'CNN')
-    add_article(fox_results, 'FOX')
-    add_article(nyt_results, 'NYTimes')
+    # add_article(cnn_results, 'CNN')
+    # add_article(fox_results, 'FOX')
+    # add_article(nyt_results, 'NYTimes')
     # add_article(huff_results, 'Huffington Post')
-    add_article(nbc_results, 'NBC News')
+    # add_article(nbc_results, 'NBC News')
 
-    time.sleep(10800)
+    # time.sleep(10800)
 
 
 # Run Server
