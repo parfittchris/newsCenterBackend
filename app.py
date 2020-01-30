@@ -110,8 +110,8 @@ def get_article(id):
 
 
 # Add Job to Scheduler
-schedule.add_job(populate_database, 'interval',hours=1)
-schedule.start()
+# schedule.add_job(populate_database, 'interval',hours=1)
+# schedule.start()
 
 
 # Run Server
