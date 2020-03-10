@@ -5,9 +5,11 @@ import app
 schedule = BlockingScheduler()
 
 
-@schedule.scheduled_job('interval', hour='3')
-def populate_database():
-    app.populate_database()
+# @schedule.scheduled_job('interval', hour='3')
+# def populate_database():
+#     app.populate_database()
 
 
-schedule.start()
+# schedule.start()
+
+app.populate_database()

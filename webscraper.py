@@ -3,7 +3,7 @@ from selenium import webdriver
 
 # CNN--------------------------------
 def get_cnn():
-    driver = webdriver.Chrome('/usr/local/chromedriver')
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     url = "http://www.cnn.com"
     driver.get(url)
 
@@ -35,7 +35,7 @@ def get_cnn():
 
 # FOX--------------------------------
 def get_fox():
-    driver = webdriver.Chrome('/usr/local/chromedriver')
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     url = "https://www.foxnews.com/"
     driver.get(url)
 
@@ -66,7 +66,7 @@ def get_fox():
 
 #  NY Times ----------------------------------
 def get_NYT():
-    driver = webdriver.Chrome('/usr/local/chromedriver')
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     url = "https://www.nytimes.com/"
     driver.get(url)
 
@@ -99,7 +99,7 @@ def get_NYT():
 # Huffington Post
 
 def get_huff():
-    driver = webdriver.Chrome('/usr/local/chromedriver')
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     url = "https://www.huffingtonpost.com"
     driver.get(url)
 
@@ -131,7 +131,7 @@ def get_huff():
 
 # NBC ---------------------------
 def get_nbc():
-    driver = webdriver.Chrome('/usr/local/chromedriver')
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     url = "https://www.nbcnews.com/"
     driver.get(url)
 
@@ -162,7 +162,7 @@ def get_nbc():
 
 # Washington Post
 def get_post():
-    driver = webdriver.Chrome('/usr/local/chromedriver')
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     url = "https://www.washingtonpost.com/"
     driver.get(url)
 
