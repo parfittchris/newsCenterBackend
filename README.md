@@ -1,7 +1,18 @@
 # News Center Backend - Webscraper and API for news articles on popular news sites
 
+
+
+
+
+### NOTE: This API no longer serves the News Center Frontend. I built a new API using Scrapy instead of Selenium and the app is getting its info from that. The link for the scrapy backend is here: https://github.com/parfittchris/newsCenterAPI.
+
+
+
+
+
 ## Background and Overview
-This app serves as the backend api for my News Center app (https://github.com/parfittchris/newscenter_app). It was built in Flask and features a scheduling feature that automatically re-scrapes the news sites every 3hours to keep content up-to-date. The webscraping itself is done using Selenium.
+This app(used to) serves as the backend api for my News Center app (https://github.com/parfittchris/newscenter_app). It was built in Flask and features a scheduling feature that automatically re-scrapes the news sites every 3hours to keep content up-to-date. The webscraping itself is done using Selenium.
+
 
 ## Features
 
